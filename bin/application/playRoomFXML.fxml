@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1280.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.playRoomControl">
+   <children>
+      <ImageView fitHeight="504.0" fitWidth="742.0" layoutX="269.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../table.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="deck" fitHeight="109.0" fitWidth="73.0" layoutX="543.0" layoutY="218.0" onMouseClicked="#getOneCard" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="betCard" fitHeight="116.0" fitWidth="73.0" layoutX="661.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="leaveGame" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="132.0" style="-fx-background-color: #e44747;" text="LEAVE GAME" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="23.0" />
+         </font>
+      </Button>
+      <ProgressIndicator fx:id="thinkingTimer" layoutX="601.0" layoutY="334.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="73.0" prefWidth="79.0" progress="0.0" />
+      <Accordion layoutX="679.0" layoutY="252.0" />
+      <ImageView fx:id="myCard2" fitHeight="143.0" fitWidth="101.0" layoutX="562.0" layoutY="477.0" onMouseClicked="#putCard" onMouseEntered="#animatCardUp" onMouseExited="#animatCardDown" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="myCard1" fitHeight="143.0" fitWidth="101.0" layoutX="455.0" layoutY="477.0" onMouseClicked="#putCard" onMouseEntered="#animatCardUp" onMouseExited="#animatCardDown" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="myCard4" fitHeight="143.0" fitWidth="101.0" layoutX="772.0" layoutY="477.0" onMouseClicked="#putCard" onMouseEntered="#animatCardUp" onMouseExited="#animatCardDown" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="myCard3" fitHeight="143.0" fitWidth="101.0" layoutX="667.0" layoutY="477.0" onMouseClicked="#putCard" onMouseEntered="#animatCardUp" onMouseExited="#animatCardDown" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="prevCard" layoutX="356.0" layoutY="518.0" mnemonicParsing="false" onMouseClicked="#PrevCard" prefHeight="42.0" prefWidth="79.0" style="-fx-background-color: #1aff8c;" text="PREV" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextCard" layoutX="893.0" layoutY="518.0" mnemonicParsing="false" onMouseClicked="#NextCard" prefHeight="42.0" prefWidth="79.0" style="-fx-background-color: #1aff8c;" text="NEXT" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="24.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="userIcon1" fitHeight="64.0" fitWidth="73.0" layoutX="222.0" layoutY="320.0" onMouseClicked="#ChangeUserIcon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../unknown_user.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="userIcon2" fitHeight="64.0" fitWidth="73.0" layoutX="215.0" layoutY="136.0" onMouseClicked="#ChangeUserIcon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../unknown_user.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="userIcon6" fitHeight="64.0" fitWidth="73.0" layoutX="979.0" layoutY="352.0" onMouseClicked="#ChangeUserIcon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../unknown_user.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="userIcon5" fitHeight="64.0" fitWidth="73.0" layoutX="979.0" layoutY="136.0" onMouseClicked="#ChangeUserIcon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../unknown_user.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="userIcon3" fitHeight="64.0" fitWidth="73.0" layoutX="451.0" layoutY="33.0" onMouseClicked="#ChangeUserIcon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../unknown_user.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="userName5" layoutX="988.0" layoutY="200.0" prefHeight="17.0" prefWidth="48.0" textFill="#2a4ee1">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="userName6" layoutX="987.0" layoutY="416.0" prefHeight="17.0" prefWidth="48.0" textFill="#2a4ee1">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="userName3" layoutX="459.0" layoutY="100.0" prefHeight="17.0" prefWidth="48.0" textFill="#2a4ee1">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="userName2" layoutX="223.0" layoutY="200.0" prefHeight="17.0" prefWidth="48.0" textFill="#2a4ee1">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="userName1" layoutX="230.0" layoutY="384.0" prefHeight="17.0" prefWidth="48.0" textFill="#2a4ee1">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="userIcon4" fitHeight="64.0" fitWidth="73.0" layoutX="751.0" layoutY="28.0" onMouseClicked="#ChangeUserIcon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../unknown_user.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="userName4" layoutX="759.0" layoutY="89.0" prefHeight="17.0" prefWidth="48.0" textFill="#2a4ee1">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="leavePlace" layoutX="14.0" layoutY="72.0" mnemonicParsing="false" onMouseClicked="#leavePlace" prefHeight="50.0" prefWidth="132.0" style="-fx-background-color: #e44747;" text="LEAVE PLACE" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="22.0" />
+         </font>
+      </Button>
+      <Label layoutX="629.0" layoutY="342.0" prefHeight="31.0" prefWidth="29.0" text="30">
+         <font>
+            <Font name="Agency FB" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="UserIsThinking" layoutX="544.0" layoutY="388.0" prefHeight="26.0" prefWidth="201.0" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="539.0" layoutY="136.0" prefHeight="36.0" prefWidth="132.0" text="CURRENT TRUMP IS" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="trumpType" layoutX="683.0" layoutY="129.0" prefHeight="36.0" prefWidth="29.0" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="41.0" />
+         </font>
+      </Label>
+      <Button fx:id="skipButton" layoutX="14.0" layoutY="570.0" mnemonicParsing="false" onMouseClicked="#skip" prefHeight="50.0" prefWidth="132.0" style="-fx-background-color: #e44747;" text="SKIP" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="22.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="Cruce" fitHeight="36.0" fitWidth="48.0" layoutX="14.0" layoutY="500.0" onMouseClicked="#changeSuit" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Cruce.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Doba" fitHeight="36.0" fitWidth="32.0" layoutX="54.0" layoutY="500.0" onMouseClicked="#changeSuit" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Doba.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Verde" fitHeight="36.0" fitWidth="48.0" layoutX="89.0" layoutY="500.0" onMouseClicked="#changeSuit" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Verde.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Rosu" fitHeight="36.0" fitWidth="73.0" layoutX="129.0" layoutY="500.0" onMouseClicked="#changeSuit" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Rosu.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="choseSuits" layoutX="16.0" layoutY="460.0" prefHeight="26.0" prefWidth="157.0" text="CHANGE GAME TRUMP" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Agency FB Bold" size="21.0" />
+         </font>
+      </Label>
+      <TitledPane animated="false" layoutX="1062.0" layoutY="14.0" prefHeight="425.0" prefWidth="204.0" style="-fx-background-color: #333333;" text="PLAYER SCORE" textFill="#2a4ee1">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #333333;">
+               <children>
+                  <ListView fx:id="userListScore" prefHeight="393.0" prefWidth="204.0" />
+               </children>
+            </AnchorPane>
+         </content>
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </TitledPane>
+   </children>
+</AnchorPane>

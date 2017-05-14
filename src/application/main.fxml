@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#checkUsername" prefHeight="640.0" prefWidth="1280.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StartUpcController">
+   <children>
+      <Line endY="640.0" layoutX="640.0" stroke="#255cda" />
+      <Line endY="640.0" layoutX="641.0" stroke="#255cda" />
+      <Line endY="640.0" layoutX="642.0" stroke="#255cda" />
+      <TextField fx:id="usernameField" layoutX="788.0" layoutY="257.0" prefHeight="51.0" prefWidth="343.0" style="-fx-border-color: #405060;">
+         <font>
+            <Font name="Agency FB" size="25.0" />
+         </font>
+      </TextField>
+      <Label layoutX="789.0" layoutY="194.0" prefHeight="17.0" prefWidth="300.0" text="USERNAME" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="51.0" />
+         </font>
+      </Label>
+      <Button fx:id="signUp" layoutX="788.0" layoutY="340.0" mnemonicParsing="false" onAction="#checkUsername" onMouseClicked="#checkUsername" prefHeight="43.0" prefWidth="169.0" text="SignUP" AnchorPane.bottomAnchor="259.0" AnchorPane.leftAnchor="788.0" AnchorPane.rightAnchor="323.0" AnchorPane.topAnchor="340.0">
+         <font>
+            <Font name="Agency FB" size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="BOTTOM_LEFT" ellipsisString="" layoutX="-70.0" layoutY="436.0" prefHeight="59.0" prefWidth="209.0" rotate="90.0" text="PLAY  &amp;  WIN" textAlignment="JUSTIFY" textFill="#f8f8f8" textOverrun="CLIP">
+         <font>
+            <Font name="Agency FB Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="559.0" text="DEFEAT YOUR OPONENTS" textFill="#f8f8f8">
+         <font>
+            <Font name="Agency FB Bold" size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="220.0" layoutY="50.0" prefHeight="296.0" prefWidth="192.0" text="101" textFill="#2f97f2">
+         <font>
+            <Font name="Agency FB Bold" size="200.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" ellipsisString="" layoutX="203.0" layoutY="463.0" prefHeight="89.0" prefWidth="446.0" text="PLAY WITH FRIENDS" textAlignment="JUSTIFY" textFill="#f8f8f8" textOverrun="CLIP">
+         <font>
+            <Font name="Agency FB Bold" size="65.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" ellipsisString="" layoutX="57.0" layoutY="530.0" prefHeight="49.0" prefWidth="150.0" text="101 ONLINE" textAlignment="JUSTIFY" textFill="#f8f8f8" textOverrun="CLIP">
+         <font>
+            <Font name="Agency FB Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" ellipsisString="" layoutX="-18.0" layoutY="428.0" prefHeight="55.0" prefWidth="189.0" rotate="90.0" text="CARD GAME" textAlignment="JUSTIFY" textFill="#f8f8f8" textOverrun="CLIP">
+         <font>
+            <Font name="Agency FB Bold" size="45.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" ellipsisString="" layoutX="365.0" layoutY="530.0" prefHeight="49.0" prefWidth="81.0" text="QUEN" textAlignment="JUSTIFY" textFill="#f8f8f8" textOverrun="CLIP">
+         <font>
+            <Font name="Agency FB Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" ellipsisString="" layoutX="207.0" layoutY="531.0" prefHeight="49.0" prefWidth="150.0" text="DIAMONDS" textAlignment="JUSTIFY" textFill="RED" textOverrun="CLIP">
+         <font>
+            <Font name="Agency FB Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" ellipsisString="" layoutX="68.0" layoutY="434.0" prefHeight="49.0" prefWidth="92.0" rotate="90.0" text="HEART" textAlignment="JUSTIFY" textFill="RED" textOverrun="CLIP">
+         <font>
+            <Font name="Agency FB Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" ellipsisString="" layoutX="101.0" layoutY="492.0" prefHeight="55.0" prefWidth="102.0" text="CLUBS" textAlignment="JUSTIFY" textFill="#000111" textOverrun="CLIP">
+         <font>
+            <Font name="Agency FB Bold" size="45.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" ellipsisString="" layoutX="441.0" layoutY="530.0" prefHeight="49.0" prefWidth="121.0" text="SPADES" textAlignment="JUSTIFY" textFill="#000111" textOverrun="CLIP">
+         <font>
+            <Font name="Agency FB Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" ellipsisString="" layoutX="130.0" layoutY="477.0" prefHeight="20.0" prefWidth="88.0" text="MAU-MAU" textAlignment="JUSTIFY" textFill="#f8f8f8" textOverrun="CLIP">
+         <font>
+            <Font name="Agency FB Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" ellipsisString="" layoutX="489.0" layoutY="404.0" prefHeight="89.0" prefWidth="102.0" text="FUN" textAlignment="JUSTIFY" textFill="#f8f8f8" textOverrun="CLIP">
+         <font>
+            <Font name="Agency FB Bold" size="65.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" ellipsisString="" layoutX="129.0" layoutY="404.0" prefHeight="89.0" prefWidth="294.0" text="CRAZY EIGHT" textAlignment="JUSTIFY" textFill="#f8f8f8" textOverrun="CLIP">
+         <font>
+            <Font name="Agency FB Bold" size="65.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" ellipsisString="" layoutX="562.0" layoutY="390.0" prefHeight="89.0" prefWidth="102.0" rotate="90.0" text="RISK" textAlignment="JUSTIFY" textFill="#f8f8f8" textOverrun="CLIP">
+         <font>
+            <Font name="Agency FB Bold" size="65.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" ellipsisString="" layoutX="554.0" layoutY="538.0" prefHeight="92.0" prefWidth="81.0" text="RULES GAME" textFill="#f8f8f8" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Agency FB Bold" size="37.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" ellipsisString="" layoutX="231.0" layoutY="260.0" prefHeight="89.0" prefWidth="169.0" text="ONLINE" textAlignment="JUSTIFY" textFill="#2f97f2" textOverrun="CLIP" underline="true">
+         <font>
+            <Font name="Agency FB Bold" size="70.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" ellipsisString="" layoutX="416.0" layoutY="442.0" prefHeight="43.0" prefWidth="59.0" text="KING" textAlignment="JUSTIFY" textFill="#f8f8f8" textOverrun="CLIP">
+         <font>
+            <Font name="Agency FB Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" ellipsisString="" layoutX="134.0" layoutY="383.0" prefHeight="30.0" prefWidth="81.0" text="JOKER" textAlignment="JUSTIFY" textFill="#f8f8f8" textOverrun="CLIP">
+         <font>
+            <Font name="Agency FB Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" ellipsisString="" layoutX="86.0" layoutY="383.0" prefHeight="43.0" prefWidth="59.0" rotate="90.0" text="SIX" textAlignment="JUSTIFY" textFill="#f8f8f8" textOverrun="CLIP">
+         <font>
+            <Font name="Agency FB Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" ellipsisString="" layoutX="502.0" layoutY="380.0" prefHeight="43.0" prefWidth="81.0" text="SEVEN" textAlignment="JUSTIFY" textFill="#f8f8f8" textOverrun="CLIP">
+         <font>
+            <Font name="Agency FB Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" ellipsisString="" layoutX="146.0" layoutY="163.0" prefHeight="89.0" prefWidth="81.0" text="♣" textAlignment="JUSTIFY" textFill="#000111" textOverrun="CLIP">
+         <font>
+            <Font name="Agency FB Bold" size="96.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" ellipsisString="" layoutX="85.0" layoutY="163.0" prefHeight="118.0" prefWidth="59.0" text="♥" textAlignment="CENTER" textFill="RED" textOverrun="CLIP">
+         <font>
+            <Font name="Agency FB Bold" size="96.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" ellipsisString="" layoutX="426.0" layoutY="163.0" prefHeight="43.0" prefWidth="59.0" text="♦" textAlignment="JUSTIFY" textFill="RED" textOverrun="CLIP">
+         <font>
+            <Font name="Agency FB Bold" size="96.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" ellipsisString="" layoutX="484.0" layoutY="163.0" prefHeight="92.0" prefWidth="102.0" text="♠" textAlignment="JUSTIFY" textFill="#000111" textOverrun="CLIP">
+         <font>
+            <Font name="Agency FB Bold" size="96.0" />
+         </font>
+      </Label>
+      <Label fx:id="usernameStatus" layoutX="789.0" layoutY="434.0" prefHeight="79.0" prefWidth="343.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="Continue" layoutX="963.0" layoutY="340.0" mnemonicParsing="false" onAction="#changePane" onMouseClicked="#changePane" prefHeight="43.0" prefWidth="169.0" text="Continue" visible="false">
+         <font>
+            <Font name="Agency FB" size="18.0" />
+         </font>
+      </Button>
+   </children>
+   <opaqueInsets>
+      <Insets top="55.0" />
+   </opaqueInsets>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
